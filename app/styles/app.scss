@@ -1,2 +1,17 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #B9F6CA;
+}
+
+.tabs .tab {
+  letter-spacing: 0.15px;
+}
+
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
