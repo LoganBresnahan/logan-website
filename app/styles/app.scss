@@ -2,16 +2,34 @@
 @import 'ember-cli-materialize';
 
 body {
-  margin-left: 10%;
-  margin-right: 10%;
-  background-color: #B9F6CA;
+  margin-left: 13%;
+  margin-right: 13%;
+  // background-color: #B9F6CA;
+  background-color: #f9fbe7;
 }
 
 .tabs .tab {
   letter-spacing: 0.15px;
 }
 
+.tabs .tab a{
+  color: #E65100;
+}
+
+.tabs .tab a:hover {
+  color: #FF6F00;
+}
+
+.tabs .indicator {
+  background-color: #E65100;
+}
+
 .container {
   margin-left: 5%;
   margin-right: 5%;
+}
+
+.collection .collection-item.active {
+  background-color: #80DEEA;
+  color: #E65100;
 }
