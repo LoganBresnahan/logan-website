@@ -1,8 +1,14 @@
-{{#link-to 'index'}}home{{/link-to}}
-{{#link-to 'about'}}about{{/link-to}}
-{{#link-to 'projects'}}projects{{/link-to}}
-{{#link-to 'blog'}}blog{{/link-to}}
-{{#link-to 'contact'}}contact{{/link-to}}
+{{#md-tabs
+  selected=basicTabsSelection}}
+  {{#link-to 'index'}} {{md-tab value='a' title='home'}} {{/link-to}}
+  {{#link-to 'about'}} {{md-tab value='b' title='about'}} {{/link-to}}
+  {{#link-to 'projects'}} {{md-tab value='c' title='projects'}} {{/link-to}}
+  {{#link-to 'blog'}} {{md-tab value='d' title='blog'}} {{/link-to}}
+  {{#link-to 'contact'}} {{md-tab value='e' title='contact'}} {{/link-to}}
+{{/md-tabs}}
+
+
+
 {{outlet}}
 
 {{!-- ember-cli-materialize modal container --}}
