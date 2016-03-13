@@ -1,5 +1,5 @@
 <div class='row'>
-  <div class='col s8'>
+  <div class='col s12'>
     <div class='card'>
     {{#md-tabs
       content=basicTabsContent
@@ -7,7 +7,7 @@
       <ul class='tabs'>
         <li class='tab col s2'>{{#link-to 'index'}} {{md-tab value='a' title='home'}} {{/link-to}}</li>
         <li class='tab col s2'>{{#link-to 'about'}} {{md-tab value='b' title='about'}} {{/link-to}}</li>
-        <li class='tab col s2'>{{#link-to 'projects'}} {{md-tab value='c' title='projects'}} {{/link-to}}</li>
+        <li class='tab col s2' id='project-tab'>{{#link-to 'projects'}} {{md-tab value='c' title='projects'}} {{/link-to}}</li>
         <li class='tab col s2'>{{#link-to 'blog'}} {{md-tab value='d' title='blog'}} {{/link-to}}</li>
         <li class='tab col s2'>{{#link-to 'contact'}} {{md-tab value='e' title='contact'}} {{/link-to}}</li>
       </ul>
