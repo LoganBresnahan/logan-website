@@ -4,7 +4,6 @@
 body {
   margin-left: 13%;
   margin-right: 13%;
-  // background-color: #B9F6CA;
   background-color: #f9fbe7;
 }
 
@@ -37,6 +36,8 @@ body {
 #me {
   height: 15em;
   width: 15em;
+  float: left;
+  margin-right: 2em;
 }
 
 h3 {
@@ -52,6 +53,17 @@ h4 {
 }
 
 footer.page-footer {
+  margin-top: 2em;
   background-color: #80DEEA;
+  color: #E65100;
+}
+
+.footer-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#right {
+  float: right;
   color: #E65100;
 }
