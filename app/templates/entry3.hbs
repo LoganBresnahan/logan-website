@@ -1,0 +1,40 @@
+{{outlet}}
+
+<head>
+  <title>Logan B's Bloggey</title>
+  <meta charset="UTF-8">
+</head>
+
+<main>
+  <h1>Arrays and Hashes</h1>
+  <h2>What are they? What are the differences?</h2>
+  <h3>(ノಠ益ಠ)ノ</h3>
+  <h4>10_23_2015</h4>
+
+  <section>
+  <p>
+    Arrays and hashes are container objects. They exist to hold and organize other objects in Ruby, and because everything in Ruby is an object you can put anything into an Array or Hash. Most commonly you will find strings and integers inside them, but don't forget, Arrays and Hashes are objects themselves which means we can put other arrays and hashes inside the originals. Of course, they are not entirely the same. Arrays always have a numerical index, wherein hashes are indexed by their <i>keys</i>. More on that to come, but here are some code snippets showing what a traditional array and hash look like. First, an array:<br><code>array = [1, 2, “hello”, “goodbye”, -99]</code><br><br>Now, a hash: <br><code>hash = {“key” => :value, :key => “value”, “key” => “value”, “hello” => 84, 46 => “penguins”}</code><br><br>These are some pretty random objects in the array and hash, but you get the idea.<br><br>
+  </p>
+  <p>
+    <h3>Arrays</h3> Arrays differ from hashes in that they are naturally numerically indexed. In our array example above, the array value 1 would have the numerical index position 0, array value 2 would be indexed at position 1, value “hello” would be positioned at numerical index 2, etc... You get the idea, even though our array has a value of 1 starting out, its index position is 0. Don't confuse the numbers, even if “hello” was the first item in the array its numerical index would also be 0. You can call upon these values by simply typing <code>array[0]</code>, which would spit out the value of <code>1</code>.
+  </p>
+  <p>
+    So, how do we create an array? There are few options:<br>With the .new method: <code>a = Array.new</code><br><br>With the literal array constructor: <code>a = [“hey”, 1, 87]</code><br><br>With the top-level method: <code>x = “hello”</code><br><code>Array(x)</code><br>outputs --><code>[“hello”]</code><br><br>Finally, the special notation: <code>%w{one_entry another_entry every literal space is a new entry}</code><br><br>
+  </p>
+  <p>
+    <h3>Hashes</h3> What about hashes? Hashes earn their keep by indexing their values with special keys. Where arrays are always numerically indexed a hash is indexed by the key that you create for it. Like in the example above. The first item in the pair was the key, each pair is separated by the comma in the hash. You can access the desired value in the hash by providing the key: <code>hash[46]</code> gives us <code>“penguins”</code>.
+  </p>
+  <p>
+   How do we make hashes? There are few options:<br>With the .new method: <code>h = Hash.new</code><br><br>With the literal hash constructor: <code>h = {“hey” => 1, 87 => “I'm a value”}</code><br><br>With the top-level method: <code>Hash([])</code><br>outputs --><code>{}</code><br><br>Finally, the hash class method: <code>Hash[“hello”, “hey”, “goodbye”, “bye”]</code><br>outputs --> <code>{“hello” => “hey”, “goodbye” => “bye”}</code><br><br>
+  </p>
+  <p>
+    <h3>When to use which?</h3> Just keep it simple. If your items can be indexed in numerical fashion, I say go with the array; it will be easier to manipulate in your program. If you need to associate values with more complex indexing like names or addresses go with the hash. In the end Ruby provides different ways to change an array to a hash and vice-versa.
+  </p>
+  <p>
+    best,
+  </p>
+  <p>
+    Logan
+  </p>
+  </section>
+</main>

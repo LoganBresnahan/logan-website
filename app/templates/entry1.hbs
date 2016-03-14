@@ -1,1 +1,69 @@
 {{outlet}}
+
+
+<head>
+  <title>Logan B's Bloggey</title>
+  <meta charset="UTF-8">
+</head>
+
+<main>
+  <h2>Version Control Systems! What are they?</h2>
+  <h3>For people that don't know, like at all. (ノಠ益ಠ)ノ</h3>
+  <h4>10_3_2015</h4>
+
+  <section>
+    <p>
+    What is version control? For some technical definitions you can check out these links below...
+    </p>
+    <p>
+    <a href="https://en.wikipedia.org/wiki/Version_control">https://en.wikipedia.org/wiki/Version_control</a>
+    </p>
+    <p>
+    <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control</a>
+    </p>
+    <p>
+      But, I like to think of version control as a technical way of saying “Hey, you see this right here? This is my save slot. Don't play on it! If you mess up my game I'm going to kill you.” This phrase was often uttered between siblings in my house when playing video games growing up.
+    </p>
+    <p>
+      If you can imagine, for a second, a menu screen of a video game that has three save slots, one for you, one for your brother, and one for your annoying cousin. Version control is a lot like this but without the same graphical interface as a video game. Version control allows multiple people to work on one project, and have different save slots so they don't get in each others way; but it also does a lot more!
+    </p>
+    <p>
+      There are many programs that utilize some kind of version control but what we will describe here is the version control program called Git. Git is probably the most widely used version control system with users all over the world. To utilize Git you must first initialize Git inside the folder or directory on your computer that you want to keep track of. If you are comfortable using your computers terminal keep on reading, if not, check out some links below...
+    </p>
+    <p>
+      <a href="http://www.macworld.co.uk/feature/mac-software/get-more-out-of-os-x-terminal-3608274/">Mac Terminal</a> or
+      <a href="https://www.digitalocean.com/community/tutorials/an-introduction-to-the-linux-terminal">Linux Terminal</a> or
+      <a href="http://www.computerhope.com/issues/chusedos.htm">Windows Terminal</a>
+    </p>
+    <p>
+      Assuming you've navigated to the directory you'd like to use Git in, on your terminal go ahead and run the command <b>git init</b> and hit enter. Wow! You just initialized Git into your directory. Now, whenever you make any changes to this directory, like adding a folder or a file, Git is going to keep track of it. In fact, Git will even keep track of the changes you make to the file that you create! Go ahead and create a file called <i>test.txt</i> in your directory where Git was initialized.
+    </p>
+    <p>
+      Okay great, but how do we know what Git is doing? How can we access what Git is doing? The key to that question is the command <b>git status</b>, go ahead and run that command. Now that you've created the <i>test.txt</i> file <b>git status</b> should show you that the file has yet to be added to Git's tracking system. Run <b>git add .</b>. Make sure you put a space and then a period after <b>add</b>, great. Now you've added <i>test.txt</i> to the “staging area”. The staging area is like the last step before Git will log the change to it's log form. Run the command, <b>git commit -m “Create and add test.txt”</b>. What goes in between the quotes is up to you. That's where you essentially write a message to yourself or whomever is looking at the Git log to see what kind of changes occurred.
+    </p>
+    <p>
+      Now we are going to run the command <b>git log</b>. Okay! The Command <b>git log</b> is the closest thing to that video game save menu we described above. <b>git log</b> is where you will go to check what kind of progress or changes have been made to the directory where Git has been initialized. Git's log is powerful, not only does it show you the most recent changes that have been saved but also your previous saves, (or as they are known to the Git community “commits”) where you can actually go back and work from an older commit if you don't like the most recent one.
+    </p>
+    <p>
+      That was very basic tutorial to give you a visual representation of how Git and version control systems work. Not too bad right? Git is more complex than my little example though. Don't forget that we can have multiple people working on the same projects from different computers even different locations.
+    </p>
+    <p>
+      If you are working from different location then you will probably need some kind of remote server that will host your projects for you but at the same time keep track of all your different changes. That's where GitHub comes in. (<a href="https://github.com/">github.com</a>) GitHub works in tandem with Git on your computer where you can push and pull your projects to and from GitHub, all the while, GitHub keeps track of everything just like Git on your computer.
+    </p>
+    <p>
+      The best part about GitHub is it's <b>FREE</b> as long as you choose to keep you projects visible to the public. You have to pay to keep them private. The benefits of version control systems and GitHub are boundless. There is a lot more you can do with them than what was described here, such as having multiple copies of the same project that can be merged together so multiple people can work on the same thing at the same time.
+    </p>
+    <p>
+      If you're thinking about using a version control system go ahead and make sure you have git installed on your computer. You can get that from Git's website: <a href="https://git-scm.com/">https://git-scm.com/</a> Also, make sure to create an account on GitHub to play around with it! For a more comprehensive guide to using Git and GitHub check out the link below...
+    </p>
+    <p>
+      <a href="http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1">http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1</a>
+    </p>
+    <p>
+      best,
+    </p>
+    <p>
+      Logan
+    </p>
+  </section>
+</main>

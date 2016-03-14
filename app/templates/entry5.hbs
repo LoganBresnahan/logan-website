@@ -1,0 +1,46 @@
+{{outlet}}
+
+<head>
+  <title>Logan B's Bloggey</title>
+  <meta charset="UTF-8">
+</head>
+
+<main>
+  <h1>Ruby classes</h1>
+  <h2>What are they good for?</h2>
+  <h3>(ノಠ益ಠ)ノ</h3>
+  <h4>11_3_2015</h4>
+
+  <section>
+    <p>
+      A class in Ruby is an object that is an outline for other objects. To be more clear, take the language Ruby for instance. Ruby has strings <code>hello I'm a string</code>, numbers <code>64</code>, symbols <code>:im_a_symbol</code>, and many other objects, but these objects all belong to their respective classes. Strings are part of the String class, numbers are part of the Fixnum class, and symbols are part of the Symbol class. So, you see, a class is like an outline of instructions for making certain objects. Here's a code example of a class I'm creating with its purpose being to tell the user they look great today. It's not a very practical example but you get the point.<br><br><img src="/assets/images/class_1.png"><br><br>Okay, so like I said, not a very practical class but it does have its purpose. Lets look at the code a little closer. A class is specified with the <code>class</code> keyword followed by the name you want to give it. That name needs to start with an uppercase letter, and traditionally with classes you will use <a href="https://en.wikipedia.org/wiki/CamelCase">CamelCase</a>. <br><br>Inside this class we have one instance method which is named <code>great_day_message</code> which will <code>puts</code> a message to the screen for the user. Notice that both classes and instance methods require an <code>end</code> keyword to signify when they are done.<br><br> Now, outside of the class new create a new <i>instance</i> of our GreatDay class. Remeber how I said classes are outlines for other objects? That's what we are doing here, <code>new_day</code> is an <i>instance</i> of our class <code>GreatDay</code>. We accomplish making a new instance just like is says in the code, <code>new_day = GreatDay.new</code>. <br><br>Well, now that new_day is an instance of our class it has the ability to do anything the class says it can do. That's right! new_day can tell us that we look great today! All we have to do is send the instance method to new_day. You do that just as it says in the code <code>new_day.great_day_message</code>Ahhhh, now we can all feel so good about our pants!
+    </p>
+    <p>
+      But there's more that a class can do! As soon as a class instance is born (new_day) it can do something without needing an instance method sent to it (new_day.great_day_message). All we need to do is write an initialize method in our class. Here's our GreatDay class changed up a little:<br><br><img src="/assets/images/class_2.png"><br><br>We made a few changes, let's talk through them. We added a special method definition called <code>initialize</code>. What's the definition of the word initialize? It's to set, to prepare, to format; and that's what it does for our class GreatDay. Look at the bottom where it only says <code>new_day</code>. Last time we had an instance method passed to it so it could tell us how good looking we are but this time there is nothing there, but why does it still give us a message? That's the key to <code>initialize</code>. As soon as an instance of the class GreatDay comes into existence it will do whatever was defined inside the initialize; in this case, it thinks we smell like butter. Let's make a few more changes to our GreatDay class and see what else it can do.
+    </p>
+    <p>
+      <img src="/assets/images/class_3.png"><br><br>We added something else to the end or initialize now it says, <code>initialize(name)</code>. What we did here was give initialize an argument. Look down at <code>new_day = GreatDay.new("Logan")</code>, see how we passed in my name? We could pass in any name if we wanted, maybe "Stacey" (that's my cat) or possibly "Marty" (that's my other cat). I know! I have two cats! Amazing!
+    </p>
+    <p>
+      Okay, just a few more things I want to show you regarding classes. We'll take a look at reader and writer methods, their shortcut cousin attr, and instance variables. Here's another modified version of the GreatDay class.<br><br><img src="/assets/images/class_4.png"><br><br> It looks like we've got a lot going on here so lets break it down piece by piece. First, instance variables, those are the things starting with the @ sign. In our case it looks like we have a <code>@stacey_reader</code> and <code>@marty_writer</code> (make sure your instance variables start with an @ sign and then a lowercase letter). The special thing about instance variables is that they can be shared by multiple instance methods in a class. See how <code>@stacey_reader</code> is inside both the <code>initialize</code> method and the <code>stacey_reader</code> method, you wouldn't be able to do that with a regular variable (those without the @ sign).
+    </p>
+    <p>
+      Now lets identify the reader and writer methods. The reader method, so properly named, is <code>stacey_reader</code> and the writer method is <code>marty_writer=(marty_value)</code>. Lets explain the reader method first. Take a look at the bottom where we call <code>new_day.stacey_reader</code>, when that is called it outputs <code>Stacey is a girl cat.</code> Why? Well, inside the initialize method of our class, the instance variable <code>@stacey_reader</code> is set equal to a statement that outputs our message. A reader methods purpose is to be called on the instance of your class (in our case our instance is new_day) and to return or output its value.
+    </p>
+    <p>
+      The writer method is very similar, but as you may have guessed there are some "writing" properties to it. Lets break down our marty_writer method. <code>marty_writer=(marty_value)</code>, see the = sign followed by the argument in the parenthesis? That's how you set up a writer method. The name and then an = sign pointing towards the methods argument. Inside the marty_writer we set a <code>@marty_writer</code> instance variable equal to the argument <code>marty_value</code>. Now, look at the bottom of the example where we call marty_writer on our class instance new_day. It's set up just like the method definition but here is where we decide what the message will be. Right now it outputs, <code>Marty is a boy cat.</code> but we could even say something like, <code>new_day.marty_writer=(“Marty is a boy cat and he's super annoying and sometimes smells a little...)</code>.
+    </p>
+    <p>
+      Now on to attr. Attr is short for attribute and it is a great way to shorten code in Ruby. There is attr_reader, attr_writer, and attr_accessor. attr_accessor inculdes both attr_reader and att_writer at the same time. Lets look at our GreatDay class one more time.<br><br><img src="/assets/images/class_5.png"><br><br>As you saw, I commented out the code that was no longer necessay to make the program work. We were able to get rid of nine lines and shrink it down to three with the attr family up top! Everything works just like last time, but did you notice I added the <code>:cats_accessor</code>? Look how we called the cats_accessor at the bottom. We call it once without the argument <code>puts new_day.cats_accessor</code>, which would be like a reader, and once with an argument, <code>puts new_day.cats_accessor=(“Cat's can be a pain.”)</code>. Both output different sentences. That's because cats_accessor will output what I originally set it to in the initialize definition unless told otherwise. (Also, you may be wondering why I put the <code>puts</code> statements down below instead of inside the class body. It is best practice to have them outside of the class body if they are not completely necessary inside it.)
+    </p>
+    <p>
+      That's a brief discussion of classes and what they can do. This was an impractical example but it got the job done. A more practical example would be something like a calculator class that adds, divides, etc... Go checkout some other examples!
+    </p>
+    <p>
+      best,
+    </p>
+    <p>
+      Logan
+    </p>
+  </section>
+</main>

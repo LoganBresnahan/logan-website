@@ -1,0 +1,52 @@
+{{outlet}}
+
+<head>
+  <title>Logan B's Bloggey</title>
+  <meta charset="UTF-8">
+</head>
+
+<main>
+
+  <h1>CSS Concepts</h1>
+  <h2>What are the differences between static, fixed, relative, and absolute positioning?</h2>
+  <h3>(ノಠ益ಠ)ノ</h3>
+  <h4>10_17_2015</h4>
+
+  <section>
+    <p>
+      Below they are typed out. As you can see there are even more values we could set as the position but we won't go into those here. Lets stick with the basics.<br><br><img src="/assets/images/Selection_002.png"><br><br>source: (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a>)
+    </p>
+    <p>
+      Before I start to define these terms, I want to throw a few other attributes at you, <b>top</b>, <b>right</b>, <b>left</b>, and <b>bottom</b>. These are attributes that let you manually adjust how far your element is from the border of the screen; or in the case of an element nested inside another element, then the space from the border of the parent element. Here is a picture to illustrate. <br><br> <img src="/assets/images/Selection_005.png"> <br><br>As you can see, I have the picture of myself nested inside the red block parent element. While the red block has a left attribute of <strong>left: 13em;</strong> that is, 13 units from the border of the browser edge. The picture of me has a left attribute of <b>left: 1em;</b> that is, 1 unit from the border of the red block parent element. I illustrate this because you will find that when using the position attribute you will potentially be setting the top, right, left, bottom attributes as well.
+    </p>
+    <p>
+      <b>Static:</b> is the easiest to understand. Without manually setting any position in your CSS file the computer has already set the position to static. By default every element in your HTML file will be set to static. Static, is known as the “normal” behavior. A static element will always push itself to the left top corner of a page. First the element will go left and then top. Here is an image of a few elements in the shapes of blocks set to a position of static.<br><br><img src="/assets/images/Selection_008.png">
+    </p>
+    <p>
+      <b>Fixed:</b> is the second easiest. If you set and element to fixed then that element will always be glued to the page, or in technical terms, the viewport. Even when you scroll to navigate on the web page the fixed element will stay in your viewing area. You can use top, right, left, bottom to manually adjust where you want to display the fixed element on the screen. Here is a link to another guide on CSS positioning, but it also has an example on the screen of a fixed element. Look the bottom right on the screen and scroll your page. <a href="http://www.w3schools.com/css/css_positioning.asp">Fixed Positioning Example</a>. If you decided to come back to this guide....did you notice how it didn't go anywhere while you scrolled the page?! Pretty cool!
+    </p>
+    <p>
+      <b>Relative:</b> relative and absolute tend to go hand in hand in practice so we'll kind of cover both here in these next two definitions. Relative positioning is done with the attributes top, right, left, bottom. You might be thinking that relative is the same as fixed, but it is not. A relative element won't stay on your screen like concrete such as a fixed element. Relative is a selfish position though, even though you position it in a custom spot on the screen it still holds it's place in line, better known as, the <i>flow</i>. Below is an image to illustrate. Remember our first image of three static blocks? Watch what happens when I make block 2 relative and move it with the values <b>top: 5em;</b> and <b>left: 5em;</b> <br><br><img src="/assets/images/Selection_007.png"><br><br>As you can see Static Block 3 doesn't assume the position that Block 2 was previously in. The new Relative Block 2 holds it's place in the flow (left then top). Also notice that Relative Block 2 is also 5em from the bottom of Static Block 1 and not 5em from the bottom of the browser like you might expect. Here is another picture to better illustrate. I'm going to change Relative Block 2 into Fixed Block 2.<br><br> <img src="/assets/images/Selection_009.png"><br><br>Notice how Fixed Block 2 gives up it's place in line and is also 5em from the browser edge rather than Static Block 1. Now lets change Fixed Block 2 to Absolute Block 2 with absolute positioning.<br><br> <img src="/assets/images/Selection_010.png"><br><br>It looks the same as Fixed block 2 but absolute positioning is not the same as fixed positioning.
+    </p>
+    <p>
+      <b>Absolute:</b> is kind of the weird hybrid positioning attribute that is made up from other positioning characteristics. Absolute, like fixed, will give up it's place in the “flow” as we saw in the previous example, but unlike fixed it is not set in concrete on the viewport (what you see at all times). Absolute, like relative positioning, is positioned <i>relative</i> to it's parent element. In the previous example Absolute Block 2 is positioned <i>relative</i> to the edge of the browser, but absolute positioning, unlike relative, gives up it's place in the <i>flow</i>. In fact, absolute can be described as having left the document, the other elements don't even know it's there, it's a ghost. Remember how I said relative and absolute go hand in hand? That's because elements with absolute positioning are often found inside a parent element that has relative positioning. Here is a picture for better understanding.<br><br><img src="/assets/images/Selection_011.png"><br><br>We have Absolute Block 2 nested inside the Relative Block 1 and the attribute top is set to <b>top: 5em;</b> and left is <b>left: 0em;</b>. I left a little white border so you could see that even though left is set to 0em it goes to the edge of Relative Block 1 rather than the edge of the browser because Absolute Block 2 is nested inside Relative Block 1. We could put Absolute Block 2 inside another absolute block and it would look the same, as well as Absolute Block 2 inside a fixed block, but Absolute block 2 will not respond to a static block. Here is an image.<br><br><img src="/assets/images/Selection_012.png">
+    </p>
+    <p>
+      To summarize:<br>
+
+      Static, is the “go with the flow” position and is the default of all elements, it will position itself to the left and then to the top of the screen.<br>
+
+      Fixed, is the concrete position, no matter where you scroll fixed will be staring at you through the screen.<br>
+
+      Relative, is the selfish place holder; he will allow you to set him where ever you want relative to his parent element but he will keep his place in the flow.<br>
+
+      Absolute, is the ghost; unknown to his other elements, has no place in the flow, but will let you set him relative to his parent elements.
+    </p>
+    <p>
+      best,
+    </p>
+    <p>
+      Logan
+    </p>
+  </section>
+</main>
