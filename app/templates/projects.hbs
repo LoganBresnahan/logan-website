@@ -1,3 +1,33 @@
 {{outlet}}
 
 <h2>My personal projects</h2>
+
+{{#md-card title='Best-Thing-Ever'
+  titleClass='cyan-text'
+  image='/assets/images/best-thing-ever.png'
+  id='image-card'}}
+
+  {{#md-card-content}}
+    Best-Thing-Ever is a web application built on rails where the user makes a choice between which musical artists are the best.
+  {{/md-card-content}}
+
+  {{#md-card-action}}
+    <a href='http://best-thing-ever.herokuapp.com/'>best-thing-ever.com</a>
+    <a href='https://github.com/pdynowski/best-thing-ever'>Github repository</a>
+  {{/md-card-action}}
+{{/md-card}}
+
+{{#md-card title='Meeple'
+  titleClass='cyan-text'
+  image='/assets/images/meeple.png'
+  id='image-card'}}
+
+  {{#md-card-content}}
+    Best-Thing-Ever is a web application built on rails where the user makes a choice between which musical artists are the best.
+  {{/md-card-content}}
+
+  {{#md-card-action}}
+    <a href='http://jtron-meeple.herokuapp.com/'>meeple.com</a>
+    <a href='https://github.com/LoganBresnahan/public-client-project-challenge'>Github repository</a>
+  {{/md-card-action}}
+{{/md-card}}
