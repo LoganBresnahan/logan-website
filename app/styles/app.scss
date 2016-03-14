@@ -4,7 +4,6 @@
 body {
   margin-left: 13%;
   margin-right: 13%;
-  // background-color: #B9F6CA;
   background-color: #f9fbe7;
 }
 
@@ -31,5 +30,40 @@ body {
 
 .collection .collection-item.active {
   background-color: #80DEEA;
+  color: #E65100;
+}
+
+#me {
+  height: 13em;
+  width: 13em;
+  float: left;
+  margin-right: 2em;
+}
+
+h3 {
+  color: #37474F;
+}
+
+h2 {
+  color: #37474F;
+}
+
+h4 {
+  color: #37474F;
+}
+
+footer.page-footer {
+  margin-top: 2em;
+  background-color: #80DEEA;
+  color: #E65100;
+}
+
+.footer-content {
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+#right {
+  float: right;
   color: #E65100;
 }

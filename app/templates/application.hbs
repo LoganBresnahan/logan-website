@@ -1,25 +1,34 @@
-<div class='row'>
-  <div class='col s12'>
+<!-- <div class='row'> -->
+  <!-- <div class='col s12'> -->
     <div class='card cyan lighten-5'>
       <div class='z-depth-2'>
         {{#md-tabs
           content=basicTabsContent
           selected=basicTabsSelection}}
           <ul class='tabs cyan lighten-5'>
-            <li class='tab col s2'>{{#link-to 'index'}} {{md-tab value='a' title='home'}} {{/link-to}}</li>
-            <li class='tab col s2 cyan lighten-4'>{{#link-to 'about'}} {{md-tab value='b' title='about'}} {{/link-to}}</li>
-            <li class='tab col s2 cyan lighten-3'>{{#link-to 'projects'}} {{md-tab value='c' title='projects'}} {{/link-to}}</li>
-            <li class='tab col s2 cyan lighten-4'>{{#link-to 'blog'}} {{md-tab value='d' title='blog'}} {{/link-to}}</li>
-            <li class='tab col s2'>{{#link-to 'contact'}} {{md-tab value='e' title='contact'}} {{/link-to}}</li>
+            <li class='tab'>{{#link-to 'index'}} {{md-tab value='a' title='home'}} {{/link-to}}</li>
+            <li class='tab cyan lighten-4'>{{#link-to 'about'}} {{md-tab value='b' title='about'}} {{/link-to}}</li>
+            <li class='tab cyan lighten-3'>{{#link-to 'projects'}} {{md-tab value='c' title='projects'}} {{/link-to}}</li>
+            <li class='tab cyan lighten-4'>{{#link-to 'blog'}} {{md-tab value='d' title='blog'}} {{/link-to}}</li>
+            <li class='tab'>{{#link-to 'contact'}} {{md-tab value='e' title='contact'}} {{/link-to}}</li>
           </ul>
         {{/md-tabs}}
       </div>
     </div>
-  </div>
-</div>
+  <!-- </div> -->
+<!-- </div> -->
 
 <div class="container">
   {{outlet}}
+</div>
+
+<div class='card'>
+  <footer class='page-footer'>
+    <div class='footer-content'>
+      &copy; 2016
+      <a id='right' href='loganbresnahan.com'>loganbresnahan.com</a>
+    </div>
+  </footer>
 </div>
 {{!-- ember-cli-materialize modal container --}}
 {{md-modal-container}}
