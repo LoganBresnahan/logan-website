@@ -7,6 +7,16 @@ body {
   background-color: #f9fbe7;
 }
 
+.container {
+  // display: flex;
+  min-height: 80vh;
+  // flex-direction: column;
+}
+
+// .ember-view {
+//   flex: 1 0 auto;
+// }
+
 .tabs .tab {
   letter-spacing: 0.15px;
 }
@@ -61,7 +71,7 @@ h2, h3, h4 {
 }
 
 footer.page-footer {
-  margin-top: 8em;
+  // margin-top: 8em;
   background-color: #80DEEA;
   color: #E65100;
 }
