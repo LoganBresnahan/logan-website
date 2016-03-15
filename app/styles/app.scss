@@ -2,8 +2,8 @@
 @import 'ember-cli-materialize';
 
 body {
-  margin-left: 13%;
-  margin-right: 13%;
+  // margin-left: 13%;
+  // margin-right: 13%;
   background-color: #f9fbe7;
 }
 
@@ -42,6 +42,10 @@ body {
 
 h2, h3, h4 {
   color: #37474F;
+}
+
+.row .col .s2 {
+  width: 100%
 }
 
 footer.page-footer {
