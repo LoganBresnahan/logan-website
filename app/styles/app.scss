@@ -2,8 +2,8 @@
 @import 'ember-cli-materialize';
 
 body {
-  margin-left: 13%;
-  margin-right: 13%;
+  // margin-left: 13%;
+  // margin-right: 13%;
   background-color: #f9fbe7;
 }
 
@@ -24,13 +24,21 @@ body {
 }
 
 .container {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 
 .collection .collection-item.active {
   background-color: #80DEEA;
   color: #E65100;
+}
+
+.collection a.collection-item {
+  color: #ffab40;
+}
+
+.card .card-image {
+  border: 1px solid cyan;
 }
 
 #me {
@@ -42,6 +50,14 @@ body {
 
 h2, h3, h4 {
   color: #37474F;
+}
+
+.row .col .s2 {
+  width: 100%
+}
+
+.card {
+  margin: 0;
 }
 
 footer.page-footer {
