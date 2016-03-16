@@ -2,31 +2,31 @@ $(window).bind("load", function() {
 
        var footerHeight = 0,
            footerTop = 0,
-           $footer = Ember.$(".page-footer");
+           $footer = $(".page-footer");
 
        positionFooter();
 
        function positionFooter() {
 
                 footerHeight = $footer.height();
-                footerTop = (Ember.$(window).scrollTop()+Ember.$(window).height()-footerHeight)+"px";
+                footerTop = ($(window).scrollTop()+$(window).height()-footerHeight)+"px";
 
-               if ( (Ember.$(document.body).height()+footerHeight) < Ember.$(window).height()) {
+               if ( ($(document.body).height()+footerHeight) < $(window).height()) {
                    $footer.css({
                         position: "absolute"
                    }).animate({
                         top: footerTop
-                   })
+                   });
                } else {
                    $footer.css({
                         position: "static"
-                   })
+                   });
                }
 
        }
 
-       Ember.$(window)
+       $(window)
                .scroll(positionFooter)
-               .resize(positionFooter)
+               .resize(positionFooter);
 
 });
