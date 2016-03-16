@@ -2,7 +2,7 @@ $(window).bind("load", function() {
 
        var footerHeight = 0,
            footerTop = 0,
-           $footer = $(".page-footer");
+           $footer = $("footer.page-footer");
 
        positionFooter();
 
