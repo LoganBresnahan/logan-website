@@ -1,49 +1,20 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
 
-html {
-  height: 100%;
-  // overflow: hidden;
-}
-
 body {
-  // margin-left: 13%;
-  // margin-right: 13%;
   background-color: #f9fbe7;
-  min-height: 100%;
 }
 
-// .ember-view {
-//   height: 100%;
-//   // overflow: hidden;
-// }
-//
-// .container {
-//   min-height: 100%;
-//   height: auto !important;
-//   // height: 100%;
-//   margin: 0 auto -40px;
-// }
-//
-// footer.page-footer {
-//   clear: both;
-//   line-height: 40px;
-//   width: 100%;
-// }
+main {
+   display: flex;
+   min-height: 78.7vh;
+   flex-direction: column;
+ }
 
-// body {
-//    display: flex;
-//    min-height: 100vh;
-//    flex-direction: column;
-//  }
-//
-//  .ember-view {
-//    flex: 1 0 auto;
-//  }
-//
-// .ember-view {
-//   height: 100%;
-// }
+ .ember-view {
+   height: 100%;
+   flex: 1 0 auto;
+ }
 
 .tabs .tab {
   letter-spacing: 0.15px;
