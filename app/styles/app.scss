@@ -1,14 +1,20 @@
 @import 'materialize';
 @import 'ember-cli-materialize';
+
 body {
-  // margin-left: 13%;
-  // margin-right: 13%;
   background-color: #f9fbe7;
 }
 
-.ember-view {
-  height: 100%;
-}
+main {
+   display: flex;
+   min-height: 78.7vh;
+   flex-direction: column;
+ }
+
+ .ember-view {
+   height: 100%;
+   flex: 1 0 auto;
+ }
 
 .tabs .tab {
   letter-spacing: 0.15px;

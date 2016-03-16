@@ -1,32 +1,32 @@
-$(window).bind("load", function() {
+this.$(window).bind("load", function() {
 
        var footerHeight = 0,
            footerTop = 0,
-           $footer = Ember.$(".page-footer");
+           $footer = this.$(".page-footer");
 
        positionFooter();
 
        function positionFooter() {
 
                 footerHeight = $footer.height();
-                footerTop = (Ember.$(window).scrollTop()+Ember.$(window).height()-footerHeight)+"px";
+                footerTop = (this.$(window).scrollTop()+this.$(window).height()-footerHeight)+"px";
 
-               if ( (Ember.$(document.body).height()+footerHeight) < Ember.$(window).height()) {
+               if ( (this.$(document.body).height()+footerHeight) < this.$(window).height()) {
                    $footer.css({
                         position: "absolute"
                    }).animate({
                         top: footerTop
-                   })
+                   });
                } else {
                    $footer.css({
                         position: "static"
-                   })
+                   });
                }
 
        }
 
-       Ember.$(window)
+       this.$(window)
                .scroll(positionFooter)
-               .resize(positionFooter)
+               .resize(positionFooter);
 
 });
