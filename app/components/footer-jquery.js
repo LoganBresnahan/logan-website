@@ -1,4 +1,4 @@
-Ember.$(window).bind("load", function() {
+$(window).bind("load", function() {
 
        var footerHeight = 0,
            footerTop = 0,
