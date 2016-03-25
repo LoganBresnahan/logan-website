@@ -49,11 +49,20 @@ main {
   border: 1px solid cyan;
 }
 
-#me {
-  height: 13em;
-  width: 13em;
+#me-card {
   float: left;
+}
+
+#me {
+  height: 20em;
+  width: 20em;
+  // float: left;
   margin-right: 2em;
+}
+
+#octocat {
+  height: 5em;
+  width: 5em;
 }
 
 h2, h3, h4 {
@@ -69,7 +78,6 @@ h2, h3, h4 {
 }
 
 footer.page-footer {
-  // margin-top: 8em;
   background-color: #80DEEA;
   color: #E65100;
 }
