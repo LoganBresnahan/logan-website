@@ -2,7 +2,7 @@
 @import 'ember-cli-materialize';
 
 body {
-  background-color: #f9fbe7;
+  background-color: coral;
 }
 
 body > .ember-view {
@@ -54,10 +54,10 @@ main {
   margin-left: 5em;
 }
 
-#me-card {
- display: -webkit-box;
- display: -moz-box;
-}
+// #me-card {
+//  display: -webkit-box;
+//  display: -moz-box;
+// }
 
 #me {
   height: 20em;
