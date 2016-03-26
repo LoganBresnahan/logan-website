@@ -49,11 +49,29 @@ main {
   border: 1px solid cyan;
 }
 
+#welcome{
+  text-align: center;
+  margin-left: 5em;
+}
+
+#me-card {
+ display: -webkit-box;
+ display: -moz-box;
+}
+
 #me {
-  height: 13em;
-  width: 13em;
-  float: left;
-  margin-right: 2em;
+  height: 20em;
+  width: 20em;
+}
+
+#octocat {
+  height: 5em;
+  width: 5em;
+}
+
+#contact {
+  margin-left: 8em;
+  width: 75%;
 }
 
 h2, h3, h4 {
@@ -69,7 +87,6 @@ h2, h3, h4 {
 }
 
 footer.page-footer {
-  // margin-top: 8em;
   background-color: #80DEEA;
   color: #E65100;
 }
