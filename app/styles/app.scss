@@ -2,7 +2,7 @@
 @import 'ember-cli-materialize';
 
 body {
-  background-color: coral;
+  background-color: #f9fbe7;
 }
 
 body > .ember-view {
@@ -62,6 +62,22 @@ main {
 #me {
   height: 20em;
   width: 20em;
+}
+
+#linkedin {
+  height: 3em;
+  width: 3em;
+  margin-left: 0.75em;
+}
+
+#twitter {
+  height: 3em;
+  width: 3em;
+  margin-left: 0.75em;
+}
+
+#email {
+  margin-left: 0.75em;
 }
 
 #octocat {
