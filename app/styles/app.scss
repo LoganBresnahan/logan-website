@@ -59,14 +59,18 @@ main {
   width: 20em;
 }
 
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+  overflow: visible;
+}
+
 #linkedin {
-  height: 3em;
+  height: auto;
   width: 3em;
   margin-left: 0.75em;
 }
 
 #twitter {
-  height: 3em;
+  height: auto;
   width: 3em;
   margin-left: 0.75em;
 }
@@ -76,7 +80,7 @@ main {
 }
 
 #octocat {
-  height: 5em;
+  height: auto;
   width: 5em;
 }
 
