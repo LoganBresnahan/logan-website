@@ -9,7 +9,7 @@ export default Ember.Component.extend({
     $('.carousel').carousel();
     $('.carousel .carousel-item img').click(function() {
       $('.carousel .carousel-item img').css({position: 'absolute'});
-      $('.carousel .carousel-item img').css('margin-top', 13.75+'em');
+      $('.carousel .carousel-item img').css('margin-top', 13.8+'em');
       $('.carousel .carousel-item img').css('margin-left', 15+'em');
     });
   }
