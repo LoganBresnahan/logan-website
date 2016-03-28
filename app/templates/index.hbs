@@ -1,43 +1,55 @@
 {{outlet}}
 
-<h4 id='welcome'>Welcome to Logan Bresnahan's website.</h4>
+<h4 id='welcome'>Welcome to Logan Bresnahan's website</h4>
 
-<div id='me-card'>
+<div class='row'>
 
- <div class="col s12 m4">
+ <div class="col s4">
    <div class="card hoverable medium">
      <div class="card-image waves-effect waves-block waves-light">
        <img class='activator' id='me' src="/assets/images/me.jpg">
      </div>
      <div class="card-content">
        <span class="card-title activator grey-text text-darken-4">About Me<i class="material-icons right">more_vert</i></span>
-       <p><a href="https://github.com/LoganBresnahan" target="_blank">Github<img id='octocat' src='/assets/images/github.png'></a></p>
+       <p>
+         <a href="https://github.com/LoganBresnahan" target="_blank"><img id='octocat' src='/assets/images/github.png' title='github'></a>
+         <a href="mailto:loganbbres@gmail.com" target="_blank"><img id='email' src='/assets/images/email.png' title='email'></a>
+         <a href="https://linkedin.com/in/loganbresnahan" target="_blank"><img id='linkedin' src='/assets/images/linkedin_circle.png' title='linkedin'></a>
+         <a href="https://twitter.com/LoganBresnahan" target="_blank"><img id='twitter' src='/assets/images/twitterific.png' title='twitter'></a>
+       </p>
      </div>
      <div class="card-reveal">
        <span class="card-title grey-text text-darken-4">About Me<i class="material-icons right">close</i></span>
-       <p>I'm a web developer and this site was built using the EmberJS framework. When I'm not programming, I'm at home snuggling with my cats.</p>
+       <p>I'm a web developer and this site was built using the EmberJS framework. When I'm not programming, I'm at home snuggling with my cats...and yes, those are my cats.</p>
        <p>Contact me if you want to chat. I respond best by email.</p>
      </div>
    </div>
  </div>
 
-<div id='contact'>
- <div class='card'>
-   <ul class='collection'>
-     <li class='collection-item avatar'>
-       <img src='assets/images/email.png' alt='' class='circle'>
-       <a href='mailto:loganbbres@gmail.com' class='collection-item'>loganbbres@gmail.com</a>
-     </li>
-     <li class='collection-item avatar'>
-       <img src='assets/images/linkedin_circle.png' alt='' class='circle'>
-       <a href='https://www.linkedin.com/in/loganbresnahan' class='collection-item' target="_blank">linkedin</a>
-     </li>
-     <li class='collection-item avatar'>
-       <img src='assets/images/twitterific.png' alt='' class='circle'>
-       <a href='https://twitter.com/loganbresnahan' class='collection-item' target="_blank">twitter</a>
-     </li>
-   </ul>
- </div>
-</div>
+
+  {{x-carousel}}
+
+  <div class='col s8'>
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="/assets/images/cat1.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="/assets/images/cat2.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="/assets/images/cat9.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="/assets/images/cat4.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="/assets/images/cat5.jpg"></a>
+      <a class="carousel-item" href="#six!"><img src="/assets/images/cat6.jpg"></a>
+      <a class="carousel-item" href="#seven!"><img src="/assets/images/cat8.jpg"></a>
+      <a class="carousel-item" href="#eight!"><img src="/assets/images/cat11.jpg"></a>
+    </div>
+
+    <div class="carousel carousel-slider">
+      <a class="carousel-item" href="#one!"><img src="/assets/images/cat1.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="/assets/images/cat2.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="/assets/images/cat9.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="/assets/images/cat4.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="/assets/images/cat5.jpg"></a>
+      <a class="carousel-item" href="#six!"><img src="/assets/images/cat6.jpg"></a>
+      <a class="carousel-item" href="#seven!"><img src="/assets/images/cat8.jpg"></a>
+    </div>
+  </div>
 
 </div>

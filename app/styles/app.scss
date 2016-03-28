@@ -54,18 +54,38 @@ main {
   margin-left: 5em;
 }
 
-#me-card {
- display: -webkit-box;
- display: -moz-box;
-}
-
 #me {
   height: 20em;
   width: 20em;
 }
 
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+  overflow: visible;
+}
+
+.carousel .carousel-item {
+  height: auto;
+  width: 15em;
+}
+
+#linkedin {
+  height: auto;
+  width: 3em;
+  margin-left: 0.75em;
+}
+
+#twitter {
+  height: auto;
+  width: 3em;
+  margin-left: 0.75em;
+}
+
+#email {
+  margin-left: 0.75em;
+}
+
 #octocat {
-  height: 5em;
+  height: auto;
   width: 5em;
 }
 
@@ -84,6 +104,10 @@ h2, h3, h4 {
 
 .card {
   margin: 0;
+}
+
+.collection a.collection-item {
+  font-size: xx-large;
 }
 
 footer.page-footer {
