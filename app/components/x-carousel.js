@@ -16,6 +16,7 @@ export default Ember.Component.extend({
     if (width <= 480){
       $('div.row').toggleClass();
       $('div').remove('.carousel');
+      $('h5').remove('#cats');
       $('.container').css('margin-left', 2+'em');
       $('#welcome').css('margin-left', 0+'em');
       $('h3').css('text-align', 'center');
