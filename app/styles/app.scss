@@ -43,6 +43,7 @@ main {
 
 .collection a.collection-item {
   color: #ffab40;
+  font-size: large;
 }
 
 .card .card-image {
@@ -54,18 +55,19 @@ main {
   margin-left: 5em;
 }
 
-#me {
-  height: 20em;
-  width: 20em;
+.card.small .card-content, .card.medium .card-content, .card.large .card-content {
+  overflow: auto;
 }
 
-.card.small .card-content, .card.medium .card-content, .card.large .card-content {
-  overflow: visible;
+.carousel {
+  margin-left: 3em;
 }
 
 .carousel .carousel-item {
   height: auto;
-  width: 15em;
+  width: 20em;
+  top: -3em;
+  border-radius: 2px solid black;
 }
 
 #linkedin {
@@ -81,6 +83,8 @@ main {
 }
 
 #email {
+  height: auto;
+  width: 3em;
   margin-left: 0.75em;
 }
 
@@ -104,10 +108,6 @@ h2, h3, h4 {
 
 .card {
   margin: 0;
-}
-
-.collection a.collection-item {
-  font-size: xx-large;
 }
 
 footer.page-footer {
