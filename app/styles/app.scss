@@ -54,6 +54,12 @@ main {
   border: 1px solid lightgray;
 }
 
+@media screen and (max-width: 480px){
+  img {
+    width: 100%;
+  }
+}
+
 #welcome{
   text-align: center;
   margin-left: 5em;
