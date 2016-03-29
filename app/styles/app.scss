@@ -5,6 +5,7 @@ body {
   background-color: #f9fbe7;
 }
 
+/* Make the footer sticky */
 body > .ember-view {
   display:        flex;
   min-height:     100vh;
@@ -14,7 +15,9 @@ body > .ember-view {
 main {
   flex: 1 0 auto;
 }
+/*------------------------*/
 
+/* Navigation */
 .tabs .tab {
   letter-spacing: 0.15px;
 }
@@ -30,6 +33,7 @@ main {
 .tabs .indicator {
   background-color: #E65100;
 }
+/*--------------------*/
 
 .container {
   margin-left: 8%;
@@ -47,7 +51,7 @@ main {
 }
 
 .card .card-image {
-  border: 1px solid cyan;
+  border: 1px solid lightgray;
 }
 
 #welcome{
@@ -60,14 +64,13 @@ main {
 }
 
 .carousel {
-  margin-left: 3em;
+  margin-left: 4em;
 }
 
 .carousel .carousel-item {
   height: auto;
   width: 20em;
   top: -3em;
-  border-radius: 2px solid black;
 }
 
 #linkedin {
