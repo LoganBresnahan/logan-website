@@ -47,7 +47,7 @@ main {
 
 .collection a.collection-item {
   color: #ffab40;
-  font-size: large;
+  font-size: x-large;
 }
 
 .card .card-image {
@@ -58,11 +58,20 @@ main {
   img {
     width: 100%;
   }
+  .collection a.collection-item {
+    font-size: small;
+  }
 }
 
-#welcome{
+#welcome {
   text-align: center;
   margin-left: 5em;
+}
+
+#cats {
+  text-align: center;
+  margin-left: 4em;
+  color: #37474F;
 }
 
 .card.small .card-content, .card.medium .card-content, .card.large .card-content {
