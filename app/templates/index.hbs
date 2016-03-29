@@ -4,10 +4,10 @@
 
 <div class='row'>
 
- <div class="col s4">
+ <!-- <div class="col s4">
    <div class="card hoverable medium">
      <div class="card-image waves-effect waves-block waves-light">
-       <img class='activator' id='me' src="/assets/images/me.jpg">
+       <img class='activator' src="/assets/images/me.jpg">
      </div>
      <div class="card-content">
        <span class="card-title activator grey-text text-darken-4">About Me<i class="material-icons right">more_vert</i></span>
@@ -24,14 +24,33 @@
        <p>Contact me if you want to chat. I respond best by email.</p>
      </div>
    </div>
- </div>
+ </div> -->
+<div class='col s4'>
+ {{#md-card title="About Me"
+    image="/assets/images/me.jpg"
+    activator=true
+    id="card-reveal"}}
 
+    {{#md-card-content}}
+      <a href="https://github.com/LoganBresnahan" target="_blank"><img id='octocat' src='/assets/images/github.png' title='github'></a>
+      <a href="mailto:loganbbres@gmail.com"><img id='email' src='/assets/images/email.png' title='email'></a>
+      <a href="https://linkedin.com/in/loganbresnahan" target="_blank"><img id='linkedin' src='/assets/images/linkedin_circle.png' title='linkedin'></a>
+      <a href="https://twitter.com/LoganBresnahan" target="_blank"><img id='twitter' src='/assets/images/twitterific.png' title='twitter'></a>
+    {{/md-card-content}}
+
+    {{#md-card-reveal}}
+      <p>I'm a web developer and this site was built using the EmberJS framework. When I'm not programming, I'm at home snuggling with my cats...and yes, those are my cats.</p>
+      <p>Contact me if you want to chat. I respond best by email.</p>
+    {{/md-card-reveal}}
+
+  {{/md-card}}
+</div>
 
   {{x-carousel}}
 
   <div class='col s8'>
     <div class="carousel">
-      <a class="carousel-item" href="#one!"><img src="/assets/images/cat1.jpg"></a>
+      <a id='first' class="carousel-item" href="#one!"><img src="/assets/images/cat1.jpg"></a>
       <a class="carousel-item" href="#two!"><img src="/assets/images/cat2.jpg"></a>
       <a class="carousel-item" href="#three!"><img src="/assets/images/cat9.jpg"></a>
       <a class="carousel-item" href="#four!"><img src="/assets/images/cat4.jpg"></a>
@@ -49,6 +68,7 @@
       <a class="carousel-item" href="#five!"><img src="/assets/images/cat5.jpg"></a>
       <a class="carousel-item" href="#six!"><img src="/assets/images/cat6.jpg"></a>
       <a class="carousel-item" href="#seven!"><img src="/assets/images/cat8.jpg"></a>
+      <a class="carousel-item" href="#eight!"><img src="/assets/images/cat11.jpg"></a>
     </div>
   </div>
 
