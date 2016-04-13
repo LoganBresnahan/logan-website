@@ -54,11 +54,6 @@ main {
   border: 1px solid lightgray;
 }
 
-// #image-card {
-//   height: auto;
-//   width: 100%;
-// }
-
 @media screen and (max-width: 480px){
   img {
     width: 100%;
@@ -131,6 +126,11 @@ h2, h3, h4 {
 
 .card {
   margin: 0;
+}
+
+.slider {
+  margin-left: 25em;
+  width: 80%;
 }
 
 footer.page-footer {
