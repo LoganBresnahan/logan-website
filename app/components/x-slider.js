@@ -5,5 +5,19 @@ export default Ember.Component.extend({
       $('.slider').slider({full_width: true});
     });
 
+    var width = $(window).width();
+    if (width <= 480){
+      $('div.row').toggleClass();
+      $('div').remove('.slider');
+      $('.container').css('margin-left', 2+'em');
+      $('#welcome').css('margin-left', 0+'em');
+      $('h3').css('text-align', 'center');
+      $('.collection-item').css('font-size', "20px");
+      $('.container style').css('margin-left', 0);
+      $('.container').css('margin-left', 'auto');
+      $('.container').css('margin-right', 'auto');
+    };
+
   }
+
 });
