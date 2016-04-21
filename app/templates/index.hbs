@@ -26,31 +26,32 @@
      </div>
    </div>
  </div> -->
-<div class='col s4'>
- {{#md-card title="About Me"
-    image="/assets/images/me.jpg"
-    activator=true
-    id="card-reveal"}}
+  <div class='col s4'>
+   {{#md-card title="About Me"
+      image="/assets/images/me.jpg"
+      activator=true
+      id="card-reveal"}}
 
-    {{#md-card-content}}
-      <a href="https://github.com/LoganBresnahan" target="_blank"><img id='octocat' src='/assets/images/github.png' title='github'></a>
-      <a href="mailto:loganbbres@gmail.com"><img id='email' src='/assets/images/email.png' title='email'></a>
-      <a href="https://linkedin.com/in/loganbresnahan" target="_blank"><img id='linkedin' src='/assets/images/linkedin_circle.png' title='linkedin'></a>
-      <a href="https://twitter.com/LoganBresnahan" target="_blank"><img id='twitter' src='/assets/images/twitterific.png' title='twitter'></a>
-    {{/md-card-content}}
+      {{#md-card-content}}
+        <a href="https://github.com/LoganBresnahan" target="_blank"><img id='octocat' src='/assets/images/github.png' title='github'></a>
+        <a href="mailto:loganbbres@gmail.com"><img id='email' src='/assets/images/email.png' title='email'></a>
+        <a href="https://linkedin.com/in/loganbresnahan" target="_blank"><img id='linkedin' src='/assets/images/linkedin_circle.png' title='linkedin'></a>
+        <a href="https://twitter.com/LoganBresnahan" target="_blank"><img id='twitter' src='/assets/images/twitterific.png' title='twitter'></a>
+      {{/md-card-content}}
 
-    {{#md-card-reveal}}
-      <p>For me, it's about waking up each day and creating something useful and gratifying. Whether it's building a Rails app or a one page website in JavaScript, software development gives me the tools to create something meaningful. Right now I'm primarily focused on Ruby, JavaScript, and Go - but I'm always ready to pick up the next thing.</p>
-      <p>Before starting my programming career I worked in a few different industries: insurance, finance, marketing, catering, and many more. They were all fantastic opportunities and I learned different skills between them. Most meaningfully, I was fortunate enough to work with a lot of really wonderful people throughout the years, and it's those great people that helped shape the person I am today.</p>
-      <p>Now, I'm fully dedicated to web development and can't wait to see what's next. Feel free to connect with me.</p>
-    {{/md-card-reveal}}
+      {{#md-card-reveal}}
+        <p>For me, it's about waking up each day and creating something useful and gratifying. Whether it's building a Rails app or a one page website in JavaScript, software development gives me the tools to create something meaningful. Right now I'm primarily focused on Ruby, JavaScript, and Go - but I'm always ready to pick up the next thing.</p>
+        <p>Before starting my programming career I worked in a few different industries: insurance, finance, marketing, catering, and many more. They were all fantastic opportunities and I learned different skills between them. Most meaningfully, I was fortunate enough to work with a lot of really wonderful people throughout the years, and it's those great people that helped shape the person I am today.</p>
+        <p>Now, I'm fully dedicated to web development and can't wait to see what's next. Feel free to connect with me.</p>
+      {{/md-card-reveal}}
 
-  {{/md-card}}
-</div>
+    {{/md-card}}
+  </div>
 
-{{x-slider}}
+  {{x-slider}}
 <div class="slider">
-    <ul class="slides">
+  <div class='col s8'>
+      <ul class="slides">
       <li>
         <img src="/assets/images/time-stamps.png">
       </li>
@@ -65,6 +66,7 @@
       </li>
     </ul>
   </div>
+</div>
 
   <!-- {{x-carousel}}
   <div class='col s8'>
