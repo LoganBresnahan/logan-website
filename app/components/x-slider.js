@@ -17,7 +17,6 @@ export default Ember.Component.extend({
       $('.container').css('margin-left', 'auto');
       $('.container').css('margin-right', 'auto');
     }else if(width >= 1550){
-      $('.slider').css('margin-left', 5+'em');
       $('.slider .slides').css('margin-left', 5+'em');
       $('.slider .slides li img').css('margin-left', 5+'em');
     };
